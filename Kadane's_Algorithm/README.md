@@ -18,8 +18,7 @@ ___**Contact**___
 
 - Nếu ```A < arr[1]``` thì  tiếp tục vòng lập tính tổng  ```arr[2] + arr[3]``` ...... Tiếp tục vòng lập và so sánh.
 
-[Kadane_Video](video/arr.mp4)
-
+[Kadane_Video](https://youtube.com/shorts/ArWADngXay8?feature=share)
 <p align="center">
   <a href="https://github.com/Youknow2509"><video controls autoplay loop src="https://cdn.discordapp.com/attachments/1017074667007254630/1017074735793840190/arr.mp4"></a>
 </p>
