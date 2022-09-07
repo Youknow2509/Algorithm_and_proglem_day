@@ -1,4 +1,4 @@
-# **Thuật toán Kadane**
+# ___**Thuật toán Kadane**___
 
 ## *Cách hoạt động:*
 - Dùng một vòng lập duyệt qua tất cả các thành phần của mảng. 
@@ -13,3 +13,5 @@
 
 [Video minh họa](https://cdn.discordapp.com/attachments/1017074667007254630/1017074735793840190/arr.mp4)
 
+___**Contact**___
+- ___Gmail___: <lytranvinh.work@gmail.com>
