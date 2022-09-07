@@ -11,7 +11,8 @@
 
 - Nếu **A < arr[1]** thì  tiếp tục vòng lập tính tổng  **arr[2] + arr[3]** ...... Tiếp tục vòng lập và so sánh.
 
-[Video minh họa](https://cdn.discordapp.com/attachments/1017074667007254630/1017074735793840190/arr.mp4)
+ FILE arr.mp4  [Video minh họa](https://cdn.discordapp.com/attachments/1017074667007254630/1017074735793840190/arr.mp4)
 
 ___**Contact**___
+- ___Github___:<https://github.com/Youknow2509>
 - ___Gmail___: <lytranvinh.work@gmail.com>
