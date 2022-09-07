@@ -14,7 +14,7 @@
 [Kadane_Video](video/arr.mp4)
 
 <video controls autoplay loop>
-    <source src="../video/arr.mp4">
+    <source src="https://cdn.discordapp.com/attachments/1017074667007254630/1017074735793840190/arr.mp4">
 </video>
 
 ___**Contact**___
