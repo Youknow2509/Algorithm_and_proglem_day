@@ -3,7 +3,7 @@
 ## *Cách hoạt động:*
 - Dùng một vòng lập duyệt qua tất cả các thành phần của mảng. 
 
-  ![arr](arr.PNG)
+![arr](image/arr.PNG)
 
 - Giả sử khi chưa duyệt phần tử nào thì gán **MAX = arr[0]**. 
 - Tính tổng phần tử **arr[0] + arr[1] = A**.
@@ -11,8 +11,9 @@
 
 - Nếu **A < arr[1]** thì  tiếp tục vòng lập tính tổng  **arr[2] + arr[3]** ...... Tiếp tục vòng lập và so sánh.
 
- FILE arr.mp4  [Video minh họa](https://cdn.discordapp.com/attachments/1017074667007254630/1017074735793840190/arr.mp4)
+[Kadane_Video](video/arr.mp4)
 
 ___**Contact**___
 - ___Github___:<https://github.com/Youknow2509>
 - ___Gmail___: <lytranvinh.work@gmail.com>
+
