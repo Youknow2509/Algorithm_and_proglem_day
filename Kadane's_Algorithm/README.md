@@ -8,7 +8,9 @@ ___**Contact**___
 ## *Cách hoạt động:*
 - Dùng một vòng lập duyệt qua tất cả các thành phần của mảng. 
 
-![arr](image/arr.PNG)
+<p align="center">
+  <a href="https://github.com/Youknow2509"><img src="image/arr.PNG"></a>
+</p>
 
 - Giả sử khi chưa duyệt phần tử nào thì gán **MAX = arr[0]**. 
 - Tính tổng phần tử **arr[0] + arr[1] = A**.
