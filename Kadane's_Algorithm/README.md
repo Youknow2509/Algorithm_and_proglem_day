@@ -13,6 +13,10 @@
 
 [Kadane_Video](video/arr.mp4)
 
+<video controls autoplay loop>
+    <source src="../video/arr.mp4">
+</video>
+
 ___**Contact**___
 - ___Github___:<https://github.com/Youknow2509>
 - ___Gmail___: <lytranvinh.work@gmail.com>
