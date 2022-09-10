@@ -2,7 +2,7 @@ ___**Contact**___
 - ___Github___:<https://github.com/Youknow2509>
 - ___Gmail___: <lytranvinh.work@gmail.com>
 
-#Active: 
+# Active: 
 - Tạo một mảng mới (B) toàn  số 0 với chiều dài rất lớn.
 - Giá trị của mảng ban đầu (A) là bao nhiêu thì số thứ n của mảng (B) đổi 0 thành 1.
   ![Hỉnh ảnh](ex.PNG)
