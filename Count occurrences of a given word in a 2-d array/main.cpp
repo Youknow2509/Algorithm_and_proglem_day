@@ -28,6 +28,8 @@ public:
 
         if ( i < a && j <b && i>=0 && j>=0 && mat[i][j] == target[index]){
             index ++;
+            char temp=m[i][j];
+            m[i][j]='*';
             if (index == c){
                 count = 1;
             }
@@ -38,6 +40,7 @@ public:
                 count += solve(i,j-1,mat,target,index,a,b,c);// left
                 count += solve(i,j+1,mat,target,index,a,b,c);//right
             }
+            m[i][j] = temp; // chong truong hop vd "aba" no se quay dau lai a cu .
         }
         return count;
     }

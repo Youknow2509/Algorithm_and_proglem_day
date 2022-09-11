@@ -6,4 +6,6 @@ ___**Contact :**___
 
 *Dynamic Programming **Paytm** + **Google***
 
-Loading......
+## Giả xử ứng dụng luôn vào trường hợp sau cho dễ giả thích:
+![ex](ex_cat.png)
+  **Nhìn code và hình -> understand**
