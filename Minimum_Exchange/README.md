@@ -34,7 +34,14 @@ character.
 - 
 ## **=> Xử lí thuật toán:**
 Xét ````( i + j )```` **chẵn**:
--> Ép trường hợp ````( i + j )```` **chẵn** là kí tự ````'A'```` => nếu ````maxtrix[i][j]```` khác ````'A'```` => ````result_1 = result_1 + 1````
-=> ````( i + j )```` **lẻ** sẽ là ````'B'```` => nếu ````maxtrix[i][j]```` khác ````'B'```` => ````result_1 = result_1 + 1````
+-> Ép trường hợp ````( i + j )```` **chẵn** là kí tự ````'A'```` 
+=> nếu ````maxtrix[i][j]```` khác ````'A'```` 
+=> ````result_1 = result_1 + 1````
+==> ````( i + j )```` **lẻ** sẽ là ````'B'```` 
+=> nếu ````maxtrix[i][j]```` khác ````'B'```` 
+=> ````result_1 = result_1 + 1````
+
+
 ===> Trường hợp 2 lồng vào đảo ngược ````( i + j )```` **chẵn** là kí tự ````'B'```` và ````( i + j )```` **lẻ** là kí tự ````'A'```` -> ````result_2````.
-Đáp án bài toán sẽ là ````min(result_1, result_2)````
+
+**Đáp án bài toán sẽ là ````min(result_1, result_2)````**
