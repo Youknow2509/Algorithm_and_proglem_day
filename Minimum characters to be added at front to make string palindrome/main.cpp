@@ -4,20 +4,20 @@ using namespace std;
 
 class Solution {
 public:
-    vector<int> computeLPSArray(string str){
-        int M = str.length();
+    vector<int> computeLPSArray(string concat){
+        int M = concat.length();
         vector<int> lps(M);
         int len = 0;
         lps[0] = 0; // lps[0] is always 0 the loop calculates lps[i] for i = 1 to M-1
         // lps [0] luôn là 0 vòng lặp tính toán lps [i] cho i = 1 đến M-1
         int i = 1;
         while (i < M){
-            if (str[i] == str[len]){
+            if (concat[i] == concat[len]){
                 len++;
                 lps[i] = len;
                 i++;
             }
-            else // (str[i] != str[len])
+            else // (concat[i] != concat[len])
             {       
             // This is tricky. Consider the example. AAACAAAA and i = 7. The idea is similar to search step.
             // Thật là khó. Hãy xem xét ví dụ. AAACAAAA và i = 7. Ý tưởng tương tự như bước tìm kiếm.
