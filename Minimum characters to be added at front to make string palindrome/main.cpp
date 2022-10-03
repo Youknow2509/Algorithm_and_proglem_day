@@ -11,13 +11,17 @@ public:
         lps[0] = 0; // lps[0] is always 0 the loop calculates lps[i] for i = 1 to M-1
         // lps [0] luôn là 0 vòng lặp tính toán lps [i] cho i = 1 đến M-1
         int i = 1;
+// debug 
+        for ( auto i : concat) cout << i;
+        cout << endl;
+        
         while (i < M){
             if (concat[i] == concat[len]){
                 len++;
                 lps[i] = len;
                 i++;
             }
-            else // (concat[i] != concat[len])
+            else // (concat[i] != str[len])
             {       
             // This is tricky. Consider the example. AAACAAAA and i = 7. The idea is similar to search step.
             // Thật là khó. Hãy xem xét ví dụ. AAACAAAA và i = 7. Ý tưởng tương tự như bước tìm kiếm.
@@ -32,6 +36,8 @@ public:
                     i++;
                 }
             }
+//debug
+            cout << lps.back() <<" ";
         }
         return lps;
     }
@@ -55,9 +61,11 @@ public:
 int main()
 {
 	
-	string str = "tcitkg";
+	string str ;
+    cin >> str;
 	Solution ob;
 	int ans = ob.minChar(str);
+    cout << endl;
 	cout << ans ;
 	return 0;
 }
