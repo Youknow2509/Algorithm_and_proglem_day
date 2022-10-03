@@ -25,3 +25,11 @@ Explanation: Add 'a' at front of above string
 to make it palindrome : "aaacecaaa"
 ```
 
+**Example 3:**
+```c++
+Input:
+S = "tcitkg"
+Output: 5
+Explanation: add "gktic" -> "gktictcitkg"
+```
+
