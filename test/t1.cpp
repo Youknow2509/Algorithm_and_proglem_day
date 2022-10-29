@@ -1,37 +1,46 @@
-//{ Driver Code Starts
-#include<bits/stdc++.h>
+
+#include <bits/stdc++.h>
 using namespace std;
 
-// } Driver Code Ends
 class Solution{
-    public:
-    long long int minValue(int a[], int b[], int n)
+private: 
+    void solve(int i, int n, string contact[], string s){
+        
+    }
+public:
+    vector<vector<string>> displayContacts(int n, string contact[], string s)
     {
-        // Your code goes here
-        sort(a, a + n);
-        sort(b, b + n);
-        long long sum1 = 0, sum2 = 0;
-        for ( int i = 0; i < n; i++){
-            sum1 += a[i]*b[n-i-1];
-            sum2 += a[n-i]*b[i-1];
+        // n la so gia tri nhap vao contact
+        // s la gia tri so sanh
+        vector<vector<string>> result;
+
+        for (int i = 0; i < s.length(); i ++){
+            solve(i, n, contact, s);
         }
-        return min(sum1, sum2);
+
+        return result;
     }
 };
 
-//{ Driver Code Starts.
-int main()
- {
 
-    int n, i;
+int main(){
+    
+    int n;
     cin>>n;
-    int a[n], b[n];
-    for(i=0;i<n;i++)
-    cin>>a[i];
-    for(i=0;i<n;i++)
-    cin>>b[i];
+    string contact[n], s;
+
+    for(int i = 0;i < n;i++)
+        cin >> contact[i];
+
+    cin >> s;
+    
     Solution ob;
-    cout<< ob.minValue(a, b, n) <<endl;
+    vector<vector<string>> ans = ob.displayContacts(n, contact, s);
+    for(int i = 0;i < s.size();i++){
+        for(auto u: ans[i])
+            cout<<u<<" ";
+        cout<<"\n";
+    }
+    
     return 0;
 }
-// } Driver Code Ends
