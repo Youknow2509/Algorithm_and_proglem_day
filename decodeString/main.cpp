@@ -5,11 +5,11 @@ using namespace std;
 
 void repeat(stack <char> &ms, string str, int num)
 {
-    string res = "";
     for (int i = 0; i < num; i++)
     // use c++ 11    for (auto x : str)
+    //push each becase var ms  "char" and var str "string";
         for(int i = 0; i < str.length(); i++)
-        	ms.push(str[i]);
+        	ms.push(str[i]); 
 }
 
 string decodeString(string s)
@@ -28,9 +28,11 @@ string decodeString(string s)
             {
                 chr = ms.top();
                 ms.pop();
-                ans = chr + ans;
+                ans = chr + ans; 
+                
             }
-            ms.pop();
+            ms.pop(); // delete "["
+            // solve number 
             while (!ms.empty() && '0' <= ms.top() && ms.top() <= '9')
             {
                 num += (ms.top() - '0')*base;
