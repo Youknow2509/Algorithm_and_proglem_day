@@ -7,16 +7,19 @@ void repeat(stack <char> &ms, string str, int num)
 {
     string res = "";
     for (int i = 0; i < num; i++)
-        for (auto x : str)
-        	ms.push(x);
+    // use c++ 11    for (auto x : str)
+        for(int i = 0; i < str.length(); i++)
+        	ms.push(str[i]);
 }
 
 string decodeString(string s)
 {
     stack <char> ms;
-    for (auto x : s)
+    // use c++ 11    for (auto x : str)    
+    //for (auto x : s)
+    for (int i = 0; i < s.length(); i++)
     {
-        if (x == ']')
+        if (s[i] == ']')
         {
             string chr;
             string ans = "";
@@ -37,7 +40,7 @@ string decodeString(string s)
             repeat(ms, ans, num);
         }
         else
-            ms.push(x);
+            ms.push(s[i]);
     }
     string res = "";
     while(!ms.empty())
