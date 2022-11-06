@@ -14,8 +14,10 @@ int solve(int a, int b){
 }
 
 int main(){
-    int a, b;
+    int a, b, c;
     cin >> a >> b;
-    cout << solve(a, b);
+    c = a > b ? a : b;
+    a = a + b - c;
+    cout << solve(c, a);
     return 0;   
 }
