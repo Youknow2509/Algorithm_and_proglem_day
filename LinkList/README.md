@@ -7,8 +7,10 @@ ___**Contact :**___
  - Link list là *cấu trúc dữ liệu động* sử dụng con trỏ để cài đặt. Danh sách liên kết đơn là một tập hợp các Node được phân bố động sao cho mỗi Node được phân bố chứa một giá trị **(Data)** và một con trỏ **(Next)**. Con trỏ sẽ trỏ đến phần tử kế tiếp của danh sách sẽ   trỏ  đến phần tử kế tiếp của danh sách liên kết đó. Nếu con trỏ mà trỏ tới NULL, nghĩa là đó là phần tử cuối cùng của **linked list**.
  - Với các ngôn ngữ khác như Java, C#, Python thì không tồn tại khái niệm con trỏ nên các bạn có thể dùng thư viện có sẵn.
  - Hình ảnh mình họa một node:
+  
 ![Hình ảnh mình họa một node](image/node.png)
 - Hình ảnh mình họa một **listLinker**:
+  
 ![Hình ảnh mình họa một listLinker](image/linklist.PNG)
 - Khai báo **node**: 
 ```c++
