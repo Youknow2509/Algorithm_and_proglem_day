@@ -45,3 +45,5 @@ node *addElement(node*p, int x){
 | Thứ tự & sắp xếp | Được lưu trữ trên một dãy ô nhớ liên tục | Được lưu trữ trên các ô nhớ ngẫu nhiên |
 | Truy cập | Truy cập tới phần tử ngẫu nhiên trực tiếp bằng cách sử dụng chỉ số mảng: O(1) | Truy cập tới phần tử ngẫu nhiên cần phải duyệt từ đầu/cuối đến phần tử đó: O(n) |
 | Tìm kiếm | Tìm kiếm tuyến tính hoặc tìm kiếm nhị phân | Chỉ có thể tìm kiếm tuyến tính |
+
+
