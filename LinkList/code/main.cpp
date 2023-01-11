@@ -22,6 +22,7 @@ void printNode (Node *node){
         cout << temp->data << " ";
         temp = temp->next;
     }
+    
 }
 // Thêm Node vào "cuối" linklist.
 Node *insertlsNode(Node *node, int data){
