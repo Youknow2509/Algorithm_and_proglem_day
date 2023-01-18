@@ -24,6 +24,6 @@ if r > l
 
 ## Hình ảnh ví dụ:
 
-![](image/1.PNG)
+![](image/MergeSortTutorial.png)
 
-Hình ảnh trên hiển thị cho bạn toàn bộ sơ đồ tiến trình của thuật toán **merge sort** cho mảng `[5, 4, 6, 1, 2, 7, 3]`. Nếu nhìn kỹ hơn vào sơ đồ này, chúng ta có thể thấy mảng ban đầu được lặp lại hành động chia cho tới khi kích thước các mảng sau chia là 1. Khi kích thước các mảng con là 1, tiến trình gộp sẽ bắt đầu thực hiện gộp lại các mảng này cho tới khi hoàn thành và chỉ còn một mảng đã sắp xếp.
+Hình ảnh trên hiển thị cho bạn toàn bộ sơ đồ tiến trình của thuật toán **merge sort** cho mảng `[38, 27, 43. 3. 9, 82, 10]`. Nếu nhìn kỹ hơn vào sơ đồ này, chúng ta có thể thấy mảng ban đầu được lặp lại hành động chia cho tới khi kích thước các mảng sau chia là 1. Khi kích thước các mảng con là 1, tiến trình gộp sẽ bắt đầu thực hiện gộp lại các mảng này cho tới khi hoàn thành và chỉ còn một mảng đã sắp xếp.

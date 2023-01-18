@@ -60,6 +60,5 @@ int main(){
 	}
     mergeSort(a, 0, n - 1);
     printArray(a, n);
-    
     return 0;
 }
