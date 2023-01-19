@@ -17,7 +17,8 @@ void merge(int array[], int left, int mid, int right)
     int indexOfSubArrayOne = 0, // Initial index of first sub-array
 		indexOfSubArrayTwo  = 0; // Initial index of second sub-array
 	int indexOfMergedArray  = left; // Initial index of merged array
-    // Merge the temp arrays back into array[left..right]
+    // Merge the temp arrays back into array[left..right] 
+	// Hợp nhất các mảng tạm thời trở lại thành mảng
 	while (indexOfSubArrayOne < subArrayOne && indexOfSubArrayTwo < subArrayTwo) {
 		if (leftArray[indexOfSubArrayOne] <= rightArray[indexOfSubArrayTwo]) {
 			array[indexOfMergedArray] = leftArray[indexOfSubArrayOne];
@@ -30,12 +31,14 @@ void merge(int array[], int left, int mid, int right)
 		indexOfMergedArray++;
 	}
 	// Copy the remaining elements of left[], if there are any
+	// Sao chép các phần tử còn lại của left[], nếu có
 	while (indexOfSubArrayOne < subArrayOne) {
 		array[indexOfMergedArray] = leftArray[indexOfSubArrayOne];
 		indexOfSubArrayOne++;
 		indexOfMergedArray++;
 	}
 	// Copy the remaining elements of right[], if there are any
+	// Sao chép các phần tử còn lại của right[], nếu có
 	while (indexOfSubArrayTwo < subArrayTwo) {
 		array[indexOfMergedArray] = rightArray[indexOfSubArrayTwo];
 		indexOfSubArrayTwo++;
