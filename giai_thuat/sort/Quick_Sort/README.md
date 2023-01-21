@@ -5,11 +5,20 @@ ___**Contact :**___
 # Quick Sort
 
 - Cũng giống như Merge sort, Quick sort cũng xử dụng chia để trị để viết thuật toán. 
-
+- **Merge sort**: phân bổ thêm bộ nhớ và sao chép dữ liệu. Còn **Quicksort**: hoán đổi.
 ## Bảng so sánh các thuật toán sắp xếp
-| ---- | ---- | ------- | ----- |------- | ------ | ------ | 
 | Name | Best | Average | Worst | Memory | Stable | Method | 
-|
+| ---- | ---- | ------- | ----- |------- | ------ | ------ | 
+| Bubble Sort | O(n) | O(n^2) | O(n^2) | O(1) | Yes | Exchanging |
+| Selection Sort | O(n^2) | O(n^2) | O(n^2) | O(1) | No | Selection |
+| Insertion Sort | O(n) | O(n^2) | O(n^2) | O(1) | Yes | Insertion | 
+| Merge Sort | O(nlogn) | O(nlogn) | O(nlogn) | O(1) | Yes | Merging |
+| Quick Sort | O(nlogn) | O(nlogn) | O(n^2) | O(logn) | No | Partitioning |
+| Heap Sort | O(nlogn) | O(nlogn) | O(nlogn) | O(1) | No | Selection |
+| Shell Sort | O(nlogn) | O(n^4/3) | O(n^3/2) | O(1) | No | Insertion |
+| Tree Sort (AVL Tree) | O(nlogn) | O(nlogn) | O(nlogn) | O(n) | Yes | Insertion |
+| Tournament Sort | O(nlogn) | O(nlogn) | O(nlogn) | O(n) | No | Selection |
+![](image/ac3477bf-a736-4067-985b-fa9bbb51e908.gif)
 **Xem video để hiểu chi tiết:** https://www.youtube.com/watch?v=COk73cpQbFQ
 
 - Giải thuật sắp xếp nhanh (**Quick Sort**) là một giải thuật hiệu quả cao và dựa trên việc chia mảng dữa liệu thành các mảng nhỏ hơn. Giải thuật sắp xếp nhanh chia mảng thành hai phần bằng cách so sánh từng phần tử của mảng với một phần tử được chọn gọi là phần tử chốt (**Pivot**): một mảng bao gồm các phần tử nhỏ hơn hoặc bằng phần tử chốt và mảng còn lại bao gồm các phần tử lớn hơn hoặc bằng phần tử chốt.
