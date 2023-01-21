@@ -4,6 +4,12 @@ ___**Contact :**___
 
 # Quick Sort
 
+- Cũng giống như Merge sort, Quick sort cũng xử dụng chia để trị để viết thuật toán. 
+
+## Bảng so sánh các thuật toán sắp xếp
+| ---- | ---- | ------- | ----- |------- | ------ | ------ | 
+| Name | Best | Average | Worst | Memory | Stable | Method | 
+|
 **Xem video để hiểu chi tiết:** https://www.youtube.com/watch?v=COk73cpQbFQ
 
 - Giải thuật sắp xếp nhanh (**Quick Sort**) là một giải thuật hiệu quả cao và dựa trên việc chia mảng dữa liệu thành các mảng nhỏ hơn. Giải thuật sắp xếp nhanh chia mảng thành hai phần bằng cách so sánh từng phần tử của mảng với một phần tử được chọn gọi là phần tử chốt (**Pivot**): một mảng bao gồm các phần tử nhỏ hơn hoặc bằng phần tử chốt và mảng còn lại bao gồm các phần tử lớn hơn hoặc bằng phần tử chốt.
