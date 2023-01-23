@@ -1,12 +1,12 @@
-
+// Tần số xuất hiện 
 #include <bits/stdc++.h>
 
 using namespace std;
 
 void swap(int *arr1, int *arr2){
-    int *temp = arr1;
-    arr1 = arr2;
-    arr2 = temp;
+    int temp = *arr1;
+    *arr1 = *arr2;
+    *arr2 = temp;
 }
 
 int partition(int *arr, int start, int end){
@@ -31,7 +31,18 @@ void Quick_Sort_Array(int *arr, int start, int  end){
 }
 
 void Solve(int *arr, int size_arr){
-    
+    //Quick_Sort_Array(arr, 0, size_arr - 1);
+    int count = 1;
+    for (int i = 1; i < size_arr; i++){
+        if (arr[i] == arr[i-1]){
+            count++;
+        }
+        else{
+            cout << arr[i-1] << " " << count << "; ";
+            count = 1;
+        }
+    }
+    cout << arr[size_arr-1] << " " << count << "; ";
 }
 
 int main(){
