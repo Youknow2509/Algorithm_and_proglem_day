@@ -1,81 +1,78 @@
 #include<bits/stdc++.h>
 
 using namespace std;
-// An AVL tree node
-class Node{
-public:
+
+struct Node{
 	int key;
 	Node *left;
 	Node *right;
 	int height;
 };
-// A utility function to get the height of the tree
+// Hàm để lấy chiều cao của cây
 int height(Node *N){
 	if (N == NULL)
 		return 0;
 	return N->height;
 }
-// A utility function to get maximum of two integers
+// Hàm trả về số lớn hơn trong hai số nguyên
 int max(int a, int b){
 	return (a > b)? a : b;
 }
-/* Helper function that allocates a new node with the given key and NULL left and right pointers. */
+/* Hàm trợ giúp phân bổ một nút mới với khóa đã cho và NULL con trỏ trái và phải. */
 Node* newNode(int key){
 	Node* node = new Node();
 	node->key = key;
 	node->left = NULL;
 	node->right = NULL;
-	node->height = 1; // new node is initially added at leaf
-	return(node);
+	node->height = 1; // nút mới ban đầu được thêm vào lá. 
+	return (node);
 }
-// A utility function to right rotate subtree rooted with y
-// See the diagram given above.
+// Một chức năng tiện ích để xoay phải cây con bắt nguồn từ y
 Node *rightRotate(Node *y){
 	Node *x = y->left;
 	Node *T2 = x->right;
-	// Perform rotation
+	// Thực hiện xoay
 	x->right = y;
 	y->left = T2;
-	// Update heights
+	// Cập nhật chiều cao
 	y->height = max(height(y->left),
 					height(y->right)) + 1;
 	x->height = max(height(x->left),
 					height(x->right)) + 1;
-	// Return new root
+	// Trả về gốc mới
 	return x;
 }
-// A utility function to left rotate subtree rooted with x
-// See the diagram given above.
+// Một chức năng tiện ích để xoay trái cây con bắt nguồn từ x
 Node *leftRotate(Node *x){
 	Node *y = x->right;
 	Node *T2 = y->left;
-	// Perform rotation
+	// Thực hiện xoay
 	y->left = x;
 	x->right = T2;
-	// Update heights
+	// Cập nhật chiều cao
 	x->height = max(height(x->left),
 					height(x->right)) + 1;
 	y->height = max(height(y->left),
 					height(y->right)) + 1;
-	// Return new root
+	// Trả về gốc mới
 	return y;
 }
-// Get Balance factor of node N
+// Nhận hệ số cân bằng của nút N
 int getBalance(Node *N){
 	if (N == NULL)
 		return 0;
 	return height(N->left) - height(N->right);
 }
-// Recursive function to insert a key in the subtree rooted with node and returns the new root of the subtree.
+// Hàm đệ quy để chèn một khóa vào cây con có gốc bằng nút và trả về gốc mới của cây con.
 Node* insert(Node* node, int key){
-	/* 1. Perform the normal BST insertion */
+	/* 1. Thực hiện chèn BST bình thường */
 	if (node == NULL)
 		return(newNode(key));
 	if (key < node->key)
 		node->left = insert(node->left, key);
 	else if (key > node->key)
 		node->right = insert(node->right, key);
-	else // Equal keys are not allowed in BST
+	else // Khóa bằng không được phép trong BST
 		return node;
 	/* 2. Update height of this ancestor node */
 	node->height = 1 + max(height(node->left),
