@@ -1,0 +1,3 @@
+Length of lis is 3
+Table res: 1 2 1 1 3 
+Elements choses: 3 10 20 
