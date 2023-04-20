@@ -76,7 +76,30 @@ int main() {
     freopen("Show_screen/INP.TXT", "r", stdin);
     freopen("Show_screen/OUT.TXT", "w", stdout);
     #endif  
-    
+    int n;
+    double _x;
+
+    cin >> n;
+
+    vector<double> X(n),
+        Y(n);
+    vector<vector<double> >table_newton(n, vector<double>(n, 0));
+
+    for (int i = 0; i < n; i++){
+        cin >> X[i] >> Y[i];
+        table_newton[0][i] = Y[i];
+    }
+
+    cin >> _x;
+
+    creat_table(X, n, table_newton);
+    //print_table_newton(table_newton, n);
+    cout << "F(x) = " << f_x(table_newton, X, n) << endl;
+    cout << "F(" << _x << ") = " << f(_x, table_newton, X, n) << endl;
+    cout << "F'(" << _x << ") = " << f_(_x, table_newton, X, n) << endl;
+    double a, b;
+    cin >> a >> b;
+    cout << "Tich phan cua F(x) tu a den b = " << tich_phan_a_den_b(a, b, table_newton, X, n) << endl;
 
     return 0;
 }
