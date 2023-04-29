@@ -8,10 +8,10 @@ int organizeParty(std::vector<int> P){
         res = 0;
     for (int i = 0; i < size_arr; i++){
         int lv_note = 1,
-        temp_val = P[i];
+            temp_val = P[i];
         while (temp_val != -1){
+            temp_val = P[temp_val - 1];
             lv_note = lv_note + 1;
-            temp_val = P[temp_val];
         }
         res = res >= lv_note ? res : lv_note;
     }
