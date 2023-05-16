@@ -59,13 +59,22 @@ double hinh_thang(double a, double b, int n) {
     return sum*h;
 }
 
-
 double f_derivative(double x) {
     // Tính đạo hàm của f(x) tại x
     double h = 0.0001; // Độ chính xác của xấp xỉ đạo hàm
     return (f(x + h) - f(x - h)) / (2 * h);
 }
 
+double bisection(double a, double b, double eps) {
+    double c = (a + b) / 2; // Lấy điểm giữa của đoạn [a, b]
+    while (abs(f(c)) > eps) { // Nếu giá trị hàm số tại c không đạt độ chính xác yêu cầu
+        if (f(a) * f(c) < 0) b = c; // Nếu f(a) và f(c) trái dấu thì nghiệm nằm trên đoạn [a, c]
+        else a = c; // Ngược lại, nghiệm nằm trên đoạn [c, b]
+        c = (a + b) / 2; // Lấy lại điểm giữa của đoạn mới
+    }
+    return c; // Trả về nghiệm với độ chính xác eps
+    // Ví dụ tìm nghiệm của hàm số trên đoạn [a, b] với độ chính xác eps
+}
 int main() {
 
     

@@ -46,6 +46,7 @@ string f_x(vector<vector<double> >tb, vector<double> X,int n){
 }
 
 double tich_phan_a_den_b(double a, double b, vector<vector<double> >tb, vector<double> X,int n){
+    // cong thuc hinh thang
     int h = 10000;
     double d = (b - a)/h,
         res  = f(a,tb, X, n) + f(b,tb, X, n);
@@ -55,10 +56,24 @@ double tich_phan_a_den_b(double a, double b, vector<vector<double> >tb, vector<d
     }
     return (d/2)*res;
 }
+double simpson(double a, double b, vector<vector<double> >tb, vector<double> X,int n){
+    int d = 10000; // h % 2 == 0
+    int h = (b - a)/2;
+    double res = f(a, tb, X, n) + f(b, tb, X, n);
+    for (int i = 1; i <= d; i++){
+        double temp = 2*f(a + i*h, tb, X, n);
+        res += temp;
+        if (i % 2 == 0){
+            res += temp;
+        }
+    }
+    return res*h/3;
+}
 
 double tinh_so_phan_doan_thoa_man(vector<vector<double> >tb, int n, double a, double b, double sai_so){
     // Error = -((b-a)^3/(12*n^2)) * f''(ξ)
 }
+
 
 int main() {
 /* 
