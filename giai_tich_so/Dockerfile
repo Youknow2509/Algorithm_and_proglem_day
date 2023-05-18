@@ -1,11 +1,13 @@
-FROM gcc:latest
+FROM ubuntu::latest
 
-WORKDIR /app
+RUN apt-get -y update && apt-get install -y
 
-COPY pp_chia_doi.cpp /app
-COPY Show_screen/INP.TXT /app
-COPY Show_screen/OUT.TXT /app
+RUN apt-get install clang
 
-RUN g++ -o myapp pp_chia_doi.cpp
+COPY . /urs/src/clang_run_file_cpp
 
-CMD ["./myapp"]
+WORKDIR /urs/src/clang_run_file_cpp
+
+RUN g++ -o file_run main.cpp
+
+CMD [ "./file_run" ]
