@@ -1,0 +1,10 @@
+3
+a
+nguyen van thuan
+2000
+b
+nguyen van a
+1990
+c
+nguyen van d
+2005
