@@ -5,12 +5,12 @@ using namespace std;
 
 double f(double x) {
     // Định nghĩa hàm f(x) của phương trình
-    return x * x - 4;
+    return pow(3, x) - 5*x - 8;
 }
 
 double derivative(double x) {
     // Định nghĩa hàm f'(x) (đạo hàm của f(x))
-    return 2 * x;
+    return pow(3, x)*std::log(3) / std::log(std::exp(1.0)); - 5;
 }
 
 double secantMethod(double x0, double x1, double epsilon, int maxIterations) {

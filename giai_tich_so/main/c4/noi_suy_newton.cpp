@@ -34,7 +34,7 @@ double interpolateNewton(double x, const std::vector<Point>& points) {
 }
 
 int main() {
-
+    
     #ifndef ONLINE_JUDGE
     freopen("/Users/v/code/Algorithm_and_proglem_day/giai_tich_so/main/Show_screen/INP.TXT", "r", stdin);
     freopen("/Users/v/code/Algorithm_and_proglem_day/giai_tich_so/main/Show_screen/OUT.TXT", "w", stdout);

@@ -1,1 +1,1 @@
-Đạo hàm gần đúng tại x = 2 là: 12.0006
+Nghiem cua ma tran: -0.261779 0.329095 -1.36874 

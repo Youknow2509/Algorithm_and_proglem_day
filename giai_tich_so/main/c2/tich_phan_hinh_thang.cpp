@@ -21,7 +21,7 @@ double integrate(double (*f)(double), double a, double b, int n) {
 
 // Hàm số mẫu để tính tích phân
 double sampleFunction(double x) {
-    return pow(x, 2); // Ví dụ: hàm số x^2
+    return abs(pow(sin(x), 4) + pow(x, 3)); // Ví dụ: hàm số x^2
 }
 
 int main() {
