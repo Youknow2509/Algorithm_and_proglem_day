@@ -1,0 +1,16 @@
+5
+nguyen van A
+8
+A
+nguyen thi B
+7
+A
+nguyen thi C
+7
+B
+nguyen van X
+8
+D
+Dang van Y
+9
+C
